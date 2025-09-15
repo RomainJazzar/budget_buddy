@@ -1,34 +1,133 @@
-# budget_buddy
-Budget Buddy
-Créer un outil de gestion financière à l’aide d’une interface graphique et une base de données, permettant le suivi de vos comptes. Cet outil permet l’affichage de toutes les transactions ainsi que leur ajout (dépenses et revenu).
-Une transaction est représentée par au moins : une référence, une description, un montant, une date et un type (retrait, dépôts, transfert).
-La gestion financière est un outil contenant des informations sensibles et personnelles. Il ne devrait pas être accessible sans sécurité. Ajouter un module de connexion.
-L’utilisateur doit être connecté pour avoir accès à son suivi de finance. Si
-l’utilisateur n’a pas de compte, il faut qu’il puisse s’enregistrer.
-Les informations nécessaires à cette inscription sont :
-➔ Nom ➔ Prénom ➔ Émail ➔ Mot de passe
+# 💰 Budget Buddy
 
-Le mot de passe doit être sécurisé, il doit contenir au minimum une majuscule, une minuscule, un caractère spécial, un chiffre et doit contenir au minimum dix caractères. Un hachage serait bienvenu.
-Un utilisateur peut réaliser les opérations suivantes :
-Déposer de l’argent
-Retirer de l’argent
-Transférer de l’argent vers un autre compte
-Afficher son historique
-L’utilisateur doit avoir la possibilité de rechercher selon un ou plusieurs
-critères (à la fois) tels que : ➔ Les transactions en fonction d’une date ➔ Les transactions en fonction d’une catégorie (loisir, repas, pot-de-vin) ➔ Les transactions en fonction de leur type ➔ Les transactions triées par montants croissant ou décroissant ➔ Les transactions réalisées entre deux dates
+> **Application de gestion financière et budgétaire**  
+> Développée avec **Python (Tkinter, MySQL, Pandas, Export CSV, intégration Power BI)**  
 
-Ajouter une page permettant à l’utilisateur d’avoir une vue globale de l’état
-de ses comptes, en mettant en avant certains points comme :
-Un récapitulatif du solde et dépenses par mois,
-Des graphiques,
-Des alertes et notifications pour signaler des informations importantes
-comme un découvert par exemple.
-Créer un ou plusieurs comptes banquiers. Chaque banquier peut gérer son
-portefeuille de clients et réaliser l’ensemble des opérations à sa place.
-Compétences techniques
-➔ Python ➔ SQL
+---
 
-Compétences visées par la certification professionnelle
-➔ Développer des interfaces utilisateur ➔ Développer des composants métier ➔ Concevoir et mettre en place une base de données relationnelle ➔ Développer des composants d'accès aux données SQL et NoSQL
+## 📌 À propos du projet  
+Budget Buddy est une **application de bureau** conçue pour aider les utilisateurs à gérer leurs finances au quotidien.  
+Elle propose une **interface visuelle et interactive** pour :  
+- Suivre revenus et dépenses  
+- Classer les transactions par catégories  
+- Contrôler les budgets grâce à des barres de progression  
+- Exporter les données (CSV) pour analyse externe  
+- Générer des **dashboards interactifs** via SQL & Power BI  
 
-----
+Ce projet a été réalisé dans le cadre de mon **Bachelor Intelligence Artificielle à La Plateforme Marseille**, avec pour objectif de combiner **programmation Python, gestion de base de données et Business Intelligence**.
+
+---
+
+## 🚀 Fonctionnalités  
+- 🖥️ **Interface Tkinter** → simple et intuitive  
+- 🗄️ **Base MySQL** → stockage structuré des transactions  
+- 📊 **Suivi des budgets** → barres de progression dynamiques  
+- 📂 **Export CSV** → partage et analyses externes  
+- 📧 **Alertes mail (simulation)** → avertissements en cas de dépassement  
+- 🔑 **Multi-utilisateurs** → rôles **utilisateur** & **banquier**  
+
+---
+
+## 🛠️ Technologies utilisées  
+- **Frontend** : Tkinter (Python GUI)  
+- **Backend** : Python (architecture POO)  
+- **Base de données** : MySQL  
+- **Analyse de données** : Pandas, CSV  
+- **Visualisation** : Power BI (dashboards interactifs)  
+
+---
+
+## 📷 Captures d’écran  
+*(Ajoutez ici des images de l’interface – ex : page de connexion, tableau de bord, barres de budget)*  
+
+---
+
+## 📂 Structure du projet  
+budget_buddy/
+├── budget_buddy.py # Application principale
+├── db/ # Scripts MySQL et schéma
+├── assets/ # Icônes, visuels
+├── exports/ # Fichiers CSV exportés
+└── README.md # Documentation
+
+yaml
+Copy code
+
+---
+
+## ⚙️ Installation  
+
+1. **Cloner le dépôt**  
+```bash
+git clone https://github.com/RomainJazzar/BudgetBuddy.git
+cd BudgetBuddy
+Configurer la base MySQL
+
+Créer une base budget_buddy
+
+Importer le schéma depuis /db/schema.sql
+
+Installer les dépendances
+
+bash
+Copy code
+pip install -r requirements.txt
+Lancer l’application
+
+bash
+Copy code
+python budget_buddy.py
+📊 Dashboards Power BI
+Suivi revenus vs dépenses
+
+Répartition par catégories
+
+Progression des budgets
+
+(Ajoutez des captures ou un lien vers vos dashboards Power BI)
+
+🎯 Compétences développées
+Ce projet m’a permis de :
+
+Appliquer les principes POO en Python sur une application réelle
+
+Utiliser SQL pour un stockage persistant des données
+
+Connecter Python & Power BI pour la visualisation
+
+Simuler des fonctionnalités proches du réel (rôles utilisateurs, alertes, exports)
+
+📌 Roadmap
+✅ Rôle banquier
+
+✅ Export CSV
+
+✅ Suivi visuel des budgets
+
+🔄 Rapports PDF (à venir)
+
+🔄 Personnalisation du thème
+
+🔄 Synchronisation cloud
+
+👤 Auteur
+Romain Jazzar
+
+📍 Marseille, France
+
+📧 romain.jazzar@laplateforme.io
+
+🌐 Portfolio
+
+💼 LinkedIn
+
+📜 Licence
+Licence MIT – libre d’utilisation et de modification.
+
+yaml
+Copy code
+
+---
+
+⚡ Version française = claire, structurée, pro.  
+👉 Veux-tu que je te fasse aussi une **version “LinkedIn Post” de Budget Buddy** (courte, émotionnelle, 
